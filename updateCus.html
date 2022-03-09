@@ -1,0 +1,17 @@
+
+{% block Content %}
+<!-- 清除浮板，加上高度 -->
+    <div style="clear: both; height: 150px;"></div>
+<!-- /cusUpdate/ 才會到根目錄，如果是cusUpdate/ 就會到http://127.0.0.1:8000/customer/cusUpdate/ -->
+    <dir style="text-align: center;">
+        <form action="" method="post">
+            {% csrf_token %}
+            <!-- type 原本是text，要修改成password密碼才不會被看到 -->
+            修改的密碼:<input type="password" name="password" />
+            <p></p> 
+            <input type="submit" value="修改" />
+        </form>
+        
+    </dir>
+
+{% endblock %}

@@ -1,0 +1,19 @@
+{% extends "Base.html" %}
+
+{% block title %}
+    會員專區
+{% endblock %}
+
+{% block Content %}
+<!-- 清除浮板，加上高度 -->
+    <div style="clear: both; height: 150px;"></div>
+<!-- /cusUpdate/ 才會到根目錄，如果是cusUpdate/ 就會到http://127.0.0.1:8000/customer/cusUpdate/ -->
+    <a href="/cusUpdate/">修改密碼</a>
+    <p></p>
+    <a href="">修改個人資訊</a>
+    <p></p>
+    <a href="/login/">登出</a>
+    <p></p>
+    
+
+{% endblock %}
